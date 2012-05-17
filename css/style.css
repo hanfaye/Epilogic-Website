@@ -765,6 +765,10 @@ html {
 
 body {
   background-color: white;
+  box-shadow: 0 0 1.5em black;
+  -webkit-box-shadow: 0 0 1.5em black;
+  -moz-box-shadow: 0 0 1.5em black;
+  -o-box-shadow: 0 0 1.5em black;
   color: rgb(57, 69,88);
   font-family: ProximaNovaLight, Helvetica, Arial, sans-serif;
   font-size: 11.5pt;
@@ -808,8 +812,16 @@ h2 {
   font-size: 22pt;
 }
 
+h3 {
+  margin-top: 1em;
+}
+
 section {
   min-height: 520px;
+}
+
+section img {
+  border-radius: 20px;
 }
 
 a,
@@ -832,12 +844,22 @@ a:hover {
   text-decoration: underline;
 }
 
+strong {
+  color: rgb(200, 69, 142);
+}
+
+#hunt-stmt {
+  font-size: 20pt;
+  font-style: italic;
+}
+
 #hunt-icon {
   background-color: rgb(48, 177, 190);
   border-radius: 20px;
 }
 
 #hunt-icon img {
+  border-radius: 0;
   margin: 20px;
 }
 
