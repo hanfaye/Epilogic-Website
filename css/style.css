@@ -804,6 +804,7 @@ nav a.selected {
 h1 {
   font-family: DinCondBlack, Helvetica, Arial, sans-serif;
   font-size: 44pt;
+  margin-bottom: 0;
   text-transform: uppercase;
 }
 
@@ -822,6 +823,10 @@ section {
 
 section img {
   border-radius: 20px;
+}
+
+footer {
+  color: #8e8f90;
 }
 
 a,
@@ -891,8 +896,6 @@ strong {
     border:0;
     display:block;
 }
-
-
 
 
 
