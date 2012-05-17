@@ -851,6 +851,7 @@ strong {
 #hunt-stmt {
   font-size: 20pt;
   font-style: italic;
+  margin-top: 0;
 }
 
 #hunt-icon {
