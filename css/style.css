@@ -738,9 +738,38 @@ Author URI: http://dev7studios.com
    Author:
    ========================================================================== */
 
+@font-face {
+  font-family: DinCondBlack;
+  src: url(fonts/FF_DIN_Condensed_Black.otf);
+}
+
+@font-face {
+  font-family: DinCondBold;
+  src: url(fonts/FF_DIN_Condensed_Bold.otf);
+}
+
+@font-face {
+  font-family: ProximaNovaLight;
+  src: url(fonts/ProximaNova-Light.otf);
+}
+
+@font-face {
+  font-family: ProximaNovaLight;
+  src: url(fonts/ProximaNova-LightItalic.otf);
+  font-style: italic;
+}
+
+html {
+  background-color: rgb(57, 69, 88);
+}
+
 body {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  background-color: white;
+  color: rgb(57, 69,88);
+  font-family: ProximaNovaLight, Helvetica, Arial, sans-serif;
+  font-size: 11.5pt;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 header {
@@ -751,6 +780,65 @@ nav {
   margin-bottom: 40px;
   text-align: center;
   margin-top: -22px;
+}
+
+nav a,
+nav a:hover,
+nav a:visited {
+  color: rgb(183, 184, 185);
+  font-style: normal;
+}
+
+
+nav a:hover,
+nav a.selected {
+  color: rgb(200, 69, 142);
+  text-decoration: underline;
+}
+
+
+h1 {
+  font-family: DinCondBlack, Helvetica, Arial, sans-serif;
+  font-size: 44pt;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: DinCondBold, Helvetica, Arial, sans-serif;
+  font-size: 22pt;
+}
+
+section {
+  min-height: 520px;
+}
+
+a,
+a:hover,
+a:visited {
+  color: rgb(48, 177, 190);
+  font-style: italic;
+  text-decoration: none;
+  transition: color 0.5s ease-in-out;
+  -webkit-transition: color 0.5s ease-in-out;
+  -moz-transition: color 0.5s ease-in-out;
+  -o-transition: color 0.5s ease-in-out;
+}
+
+a:visited {
+  color: rgb(183, 184, 185);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+#hunt-icon {
+  background-color: rgb(48, 177, 190);
+  border-radius: 20px;
+}
+
+#hunt-icon img {
+  margin: 20px;
 }
 
 .nivoSlider {
